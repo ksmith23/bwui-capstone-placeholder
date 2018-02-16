@@ -1,0 +1,184 @@
+#main {
+  grid-area: main;
+  display: grid;
+  justify-items: left;
+  text-align: left;
+  background-color: hsla(0, 0%, 98%, 1);
+  border-top: 1px solid hsla(0, 0%, 98%, 1);
+}
+
+#main h2 {
+  margin-bottom: 2rem;
+  font-size: inherit;
+  font-size: 35px;
+  text-align: left;
+}
+.vendor p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  text-align: left;
+  line-height: 24px;
+}
+
+#main .button {
+  box-sizing: border-box;
+  width: 14.375rem;
+  padding: .875rem 0;
+}
+
+.vendor {
+  padding: 3.75rem 11.75rem 8.75rem 16.75rem;
+}
+
+
+form {
+  display: grid;
+  grid-template-areas: 'name name number email'
+                       'product product product price'
+                       'detials details details details'
+                       '. . . submit';
+  font-size: inherit;
+}
+
+input {
+  min-width: 100%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding-right: 3.25em;
+}
+
+select {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: inherit;
+  border-radius: 25px;
+  margin-right: -3.5em;
+}
+
+textarea {
+  min-height: 12rem;
+  font-size: inherit;
+  margin-right: -0.10rem;
+  margin-left: -0.25rem;
+}
+
+#name {
+  grid-area: name;
+}
+
+#number {
+  grid-area: number;
+}
+
+#email {
+  grid-area: email;
+}
+
+#product {
+    grid-area: product;
+}
+
+#price {
+  grid-area: price;
+}
+
+#details {
+  grid-area: details;
+  text-align: left;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+  margin-right: 0.2em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .vendor {
+    padding-left: 14%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'number email'
+                         'product product'
+                         'product price'
+                         'details details'
+                         '. . . submit';
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'number'
+                         'email'
+                         'product'
+                         'price'
+                         'details'
+                         'submit';
+  }
+
+  #submit {
+    justify-self: center;
+  }
+}
+
+footer img {
+  align-self: center;
+  justify-self: center;
+  padding: 50px 50px 0px 70px;
+}
+
+/* Hover,active,visited links */
+
+a {
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+a:hover {
+  font-style: oblique;
+}
+a:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+a:visited {
+  color: CornflowerBlue ;
+}
+
+b {
+  color: #119292;
+  font-weight: 700;
+}
+
+b:hover {
+  color: slategrey;
+  font-style: oblique;
+}
+b:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+b:visited {
+  color: CornflowerBlue ;
+}
+
+c {
+  color: white;
+  font-weight: 700;
+}
+
+c:hover {
+  color: white;
+  font-style: oblique;
+}
+c:active {
+  color: White;
+}
+c:visited {
+  color: white;
+}

@@ -1,0 +1,109 @@
+/* Conditions of Use Page */
+
+.Conditions_of_Use {
+  padding: 0.75rem 17% 5.75rem 14%;
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.Conditions_of_Use  p {
+  font-family: 'Arial-MT', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 29px;
+  letter-spacing: 0.75px;
+}
+
+
+h3 {
+  padding: 25px 0px 20px 0px;
+  font-family: 'Arial-MT', sans-serif;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 18px;
+  padding: 0px 0px 2px 0px;
+  font-weight: 700;
+  color: slategray;
+  font-family: 'Arial-MT', sans-serif;
+  line-height: 30px;
+}
+
+footer img {
+  align-self: center;
+  justify-self: center;
+  padding: 50px 50px 0px 70px;
+}
+
+@media (max-width: 992px) {
+    .Conditions_of_Use p {
+    font-size: 50% !important;
+    line-height: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    h3 {
+    font-size: 50% !important;
+    line-height: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    h5 {
+    font-size: 50% !important;
+    line-height: 50% !important;
+    }
+}
+
+/* Hover,active,visited links */
+
+a {
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+a:hover {
+  font-style: oblique;
+}
+a:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+a:visited {
+  color: CornflowerBlue ;
+}
+
+b {
+  color: #119292;
+  font-weight: 700;
+}
+
+b:hover {
+  color: slategrey;
+  font-style: oblique;
+}
+b:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+b:visited {
+  color: CornflowerBlue ;
+}
+
+c {
+  color: white;
+  font-weight: 700;
+}
+
+c:hover {
+  color: white;
+  font-style: oblique;
+}
+c:active {
+  color: White;
+}
+c:visited {
+  color: white;
+}

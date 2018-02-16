@@ -1,0 +1,141 @@
+/* Reusable Component - Button */
+
+#main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.header {
+    width: 1250px;
+    height: 90px;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 22rem 1fr 22rem;
+    align-items: center;
+    padding: .75rem 5rem;
+    font-size: inherit;
+    background-color: hsla(0, 0%, 93%, 1);
+}
+
+.button {
+  border-radius: 30px;
+  background-color: #119292;
+  text-align: center;
+  color: white;
+  transition: .25s;
+  margin-top: 15px;
+}
+
+.button:hover {
+
+  background-color: #119292;
+  font-style: oblique;
+}
+
+/* Text Banner (#c72c05)--*/
+.banner {
+  font-size: 18px;
+  font-stretch: extra-condensed;
+  text-transform: uppercase;
+  color: mintcream;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1030px) {
+    .banner {
+    font-size: 50% !important;
+    max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.search-bar {
+  display: flex;
+  border-radius: 33px 53px 33px 53px;
+  padding: 1rem 1rem;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 30px;
+  padding-left: 25px;
+}
+
+.search-bar .icon {
+  background-color: hsla(0, 0%, 89%, 1);
+  border-radius: 0 53px 53px 0;
+  padding: 1rem;
+}
+
+.search-bar .icon img {
+  vertical-align: middle;
+}
+
+footer img {
+  align-self: center;
+  justify-self: center;
+  padding: 50px 50px 0px 70px;
+}
+
+/* Hover,active,visited links */
+
+a {
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+a:hover {
+  font-style: oblique;
+}
+a:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+a:visited {
+  color: CornflowerBlue ;
+}
+
+b {
+  color: #119292;
+  font-weight: 700;
+}
+
+b:hover {
+  color: slategrey;
+  font-style: oblique;
+}
+b:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+b:visited {
+  color: CornflowerBlue ;
+}
+
+c {
+  color: white;
+  font-weight: 700;
+}
+
+c:hover {
+  color: white;
+  font-style: oblique;
+}
+c:active {
+  color: White;
+}
+c:visited {
+  color: white;
+}

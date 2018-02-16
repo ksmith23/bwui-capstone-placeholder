@@ -1,0 +1,110 @@
+#main {
+  grid-area: main;
+  display: grid;
+  justify-items: left;
+  text-align: left;
+  background-color: hsla(0, 0%, 98%, 1);
+  border-top: 1px solid hsla(0, 0%, 98%, 1);
+}
+
+#main h2 {
+  font-size: 35px;
+  text-align: left;
+  padding: 3.75rem 11.75rem 3.009rem 16.75rem;
+}
+p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 11.75rem 0 16.75rem;
+}
+
+iframe {
+  margin-left: 16.75rem;
+  margin-bottom: 150px;
+}
+
+#main .button {
+  box-sizing: border-box;
+  width: 14.375rem;
+  padding: .875rem 0;
+}
+
+@media (max-width: 992px) {
+    .calendar p {
+    font-size: 20% !important;
+    padding: 0px 100px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+  .calendar {
+    padding: 3.75rem 0 8.75rem 0;
+    padding-left: 15%;
+    padding-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .iframe {
+    resize: both (5%);
+  }
+}
+
+footer img {
+  align-self: center;
+  justify-self: center;
+  padding: 50px 50px 0px 70px;
+}
+
+
+/* Hover,active,visited links */
+
+a {
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+a:hover {
+  font-style: oblique;
+}
+a:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+a:visited {
+  color: CornflowerBlue ;
+}
+
+b {
+  color: #119292;
+  font-weight: 700;
+}
+
+b:hover {
+  color: slategrey;
+  font-style: oblique;
+}
+b:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+b:visited {
+  color: CornflowerBlue ;
+}
+
+c {
+  color: white;
+  font-weight: 700;
+}
+
+c:hover {
+  color: white;
+  font-style: oblique;
+}
+c:active {
+  color: White;
+}
+c:visited {
+  color: white;
+}

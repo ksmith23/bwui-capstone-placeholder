@@ -1,0 +1,206 @@
+#main {
+  grid-area: main;
+  display: grid;
+  justify-items: left;
+  text-align: left;
+  background-color: hsla(0, 0%, 98%, 1);
+  border-top: 1px solid hsla(0, 0%, 98%, 1);
+}
+
+#main h2 {
+  margin-bottom: 2rem;
+  font-size: inherit;
+  font-size: 35px;
+  text-align: left;
+}
+.help p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  text-align: left;
+  line-height: 24px;
+}
+
+#main .button {
+  box-sizing: border-box;
+  width: 14.375rem;
+  padding: .875rem 0;
+}
+
+.search-bar {
+  display: flex;
+  border-radius: 33px 53px 33px 53px;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  margin-left: -2rem;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 30px;
+  padding-left: 25px;
+}
+
+.search-bar .icon {
+  background-color: hsla(0, 0%, 89%, 1);
+  border-radius: 0 53px 53px 0;
+  padding: 1rem;
+}
+
+.search-bar .icon img {
+  vertical-align: middle;
+}
+
+.help {
+  padding: 3.75rem 11.75rem 8.75rem 16.75rem;
+}
+
+
+form {
+  display: grid;
+  grid-template-areas: 'name name number email'
+                       'concerns concerns concerns concerns'
+                       '. . . submit';
+  font-size: inherit;
+}
+
+input {
+  min-width: 100%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding-right: 3.25em;
+}
+
+select {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: inherit;
+  border-radius: 25px;
+  margin-right: -3.5em;
+}
+
+textarea {
+  min-height: 12rem;
+  font-size: inherit;
+  margin-right: -0.10rem;
+  margin-left: -0.25rem;
+}
+
+#name {
+  grid-area: name;
+}
+
+#number {
+  grid-area: number;
+}
+
+#email {
+  grid-area: email;
+}
+
+#concerns {
+  grid-area: concerns;
+  text-align: left;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+  margin-right: 0.2em;
+}
+
+@media (max-width: 992px) {
+    .help p {
+    font-size: 80% !important;
+    padding: 0px 100px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+  .help {
+    padding: 3.75rem 0 8.75rem 0;
+    padding-left: 15%;
+    padding-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'number email'
+                         'concerns concerns'
+                         '. submit';
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'number'
+                         'email'
+                         'concerns'
+                         'submit';
+  }
+
+  #submit {
+    justify-self: center;
+  }
+}
+
+footer img {
+  align-self: center;
+  justify-self: center;
+  padding: 50px 50px 0px 70px;
+}
+
+/* Hover,active,visited links */
+
+a {
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+a:hover {
+  font-style: oblique;
+}
+a:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+a:visited {
+  color: CornflowerBlue ;
+}
+
+b {
+  color: #119292;
+  font-weight: 700;
+}
+
+b:hover {
+  color: slategrey;
+  font-style: oblique;
+}
+b:active {
+  color: hsla(0, 0%, 29%, 1);
+}
+b:visited {
+  color: CornflowerBlue ;
+}
+
+c {
+  color: white;
+  font-weight: 700;
+}
+
+c:hover {
+  color: white;
+  font-style: oblique;
+}
+c:active {
+  color: White;
+}
+c:visited {
+  color: white;
+}
